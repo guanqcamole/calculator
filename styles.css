@@ -1,0 +1,49 @@
+.container {
+    padding: 5px 5px;
+}
+
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+#display {
+    width: 300px;
+    height: 50px;
+    background: rgb(160, 160, 160);
+    border: 2px solid black;
+    box-shadow: inset 4px 3px 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 5px;
+}
+
+#pwrBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.pwr {
+    background: rgb(121, 121, 255);
+    border-radius: 10px;
+}
+
+#numberBtns {
+    flex-direction: row;
+    flex:auto
+}
+
+
+.operatorBtn {
+    background: rgb(124, 123, 123);
+}
+
+.equalBtn {
+    background: rgb(226, 147, 0);
+}
+
