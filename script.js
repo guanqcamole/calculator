@@ -1,12 +1,42 @@
-const numbers = () => {
-    const numberBtns = document.querySelector('#numberBtns');
+const onClicks = () => {
+    const onBtn = document.querySelector('on');
+    const offBtn = document.querySelector('off');
+    const add = document.querySelector('add');
+    const subtract = document.querySelector('subtract');
+    const multiply = document.querySelector('multiply');
+    const divide = document.querySelector('divide');
+    const equal = document.querySelector('equal');
 
-    for (let i = 0; i < 10; i++) {
-        const numberBtn = document.createElement('button');
-        numberBtn.classList.add('btn');
-        numberBtn.textContent = i;
-        numberBtns.appendChild(numberBtn);    
-    }
+
 }
 
-numbers();
+// const add = (a, b) => {
+//     if (typeof a != 'number' || typeof b != 'number') {
+//         return 'ERROR';
+//     }
+//     return a + b;
+// }
+
+// const subtract = (a, b) => {
+//     if (typeof a != 'number' || typeof b != 'number') {
+//         return 'ERROR';
+//     }
+//     return a - b;
+// }
+
+// const multiply = (a, b) => {
+//     if (typeof a != 'number' || typeof b != 'number') {
+//         return 'ERROR';
+//     }
+//     return a * b;
+// }
+
+// const divide = (a, b) => {
+//     if (typeof a != 'number' || typeof b != 'number') {
+//         return 'ERROR';
+//     }
+//     return a * b;
+// }
+
+// const equal 
+
