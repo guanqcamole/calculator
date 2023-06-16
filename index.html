@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <title>Local Calculator</title>
         <link rel=stylesheet href="styles.css">
-        <script src="script.js" defer></script>
+        <script src="script.js" async></script>
     </head>
     <body>
-        <div class="container flexbox">
+        <div class="container flexbox wholecalc">
             <div id="display"></div>
             
             <div id="all-buttons" class="container">
@@ -15,39 +15,34 @@
                     <button class="btn pwr on">On</button>
                     <button class="btn pwr off">Off</button>
                 </div>
-                <div class="container flexbox notOnOffBtns">
+                <div class="flexbox notOnOffBtns">
                     <div id="numberBtns" class="flexbox">
-                        <div id="firstNumRow">
+                        <div id="firstRow">
                             <button class="btn">7</button>
                             <button class="btn">8</button>
                             <button class="btn">9</button>
+                            <button class="btn operatorBtn add">+</button>
                         </div>
-                        <div id="secondNumRow">
+                        <div id="secondRow">
                             <button class="btn">4</button>
                             <button class="btn">5</button>
                             <button class="btn">6</button>
+                            <button class="btn operatorBtn subtract">-</button>
                         </div>
-                        <div id="thirdNumRow">
+                        <div id="thirdRow">
                             <button class="btn">1</button>
                             <button class="btn">2</button>
                             <button class="btn">3</button>
+                            <button class="btn operatorBtn multiply">x</button>
                         </div>
-                        <div id="fourthNumRow">
+                        <div id="fourthRow">
+                            <button id="decimal" class="btn">.</button>
                             <button class="btn">0</button>
+                            <button class="btn equalBtn equal">=</button>
+                            <button class="btn operatorBtn divide">/</button> 
                         </div>
-                    </div>
-                    <div id="extras">
-                        <button class="btn">.</button>
-                    </div>
-                    <div id="operatorBtns flexbox">
-                        <button class="btn operatorBtn add">+</button>
-                        <button class="btn operatorBtn subtract">-</button>
-                        <button class="btn operatorBtn multiply">x</button>
-                        <button class="btn operatorBtn divide">/</button>
-                        <button class="btn equalBtn equal">=</button>
                     </div>
                 </div>
-                
             </div>
         </div>
     </body>

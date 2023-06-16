@@ -1,27 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
 .container {
     padding: 5px 5px;
     width: fit-content;
 }
 
-
 .flexbox {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #display {
-    width: 300px;
-    height: 50px;
+    width: 25em;
+    height: 8em;
+    margin-top: 0.625em;
     background: rgb(160, 160, 160);
     border: 2px solid black;
+    border-radius: 10px;
     box-shadow: inset 4px 3px 4px 1px rgba(0, 0, 0, 0.3);
 }
 
 .btn {
-    width: 30px;
-    height: 30px;
+    width: 5em;
+    height: 5em;
     background: white;
-    border-radius: 5px;
+    border-radius: 20px;
+    border-width: 3px;
+    margin: 0.625em;
+}
+
+.wholecalc {
+    background-color: silver;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin: 0.625em;
 }
 
 #pwrBtns {
@@ -31,7 +53,8 @@
 }
 .pwr {
     background: rgb(121, 121, 255);
-    border-radius: 10px;
+    border-radius: 50px;
+
 }
 
 #numberBtns {
@@ -50,3 +73,8 @@
 .notOnOffBtns {
     flex-direction: row;
 }
+
+.on {
+    margin-right: .5em;
+}
+
