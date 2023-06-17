@@ -8,7 +8,7 @@
 }
 
 .container {
-    padding: 5px 5px;
+    padding: 5px;
     width: fit-content;
 }
 
@@ -66,7 +66,7 @@
     background: rgb(124, 123, 123);
 }
 
-.equalBtn {
+#equal {
     background: rgb(226, 147, 0);
 }
 
