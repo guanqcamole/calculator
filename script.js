@@ -3,6 +3,9 @@ const calculator = () => {
     const onBtn = document.querySelector('.on');
     const offBtn = document.querySelector('.off');
 
+    //clear
+    const clrBtn = document.getElementById('clr');
+
     //operators
     const add = document.getElementById('add');
     const subtract = document.getElementById('subtract');
@@ -38,37 +41,48 @@ const calculator = () => {
         location.reload();
     }
 
+    //Clear the screen
+    const clrScr = () => {
+
+    }
+
     //Prints message onto display
     const print = (message) => {
         const display = document.getElementById('display');
-        display.innerHTML = display.innerHTML + message;
+        display.innerHTML = message;
     }
 
-    //Needs debug
     const printEqn = (input) => {
-        display(input);
+        print(input);
     }
 
     //ADD A CLEAR BUTTON
 
     //ADD operators and debug
     const onClicks = () => {
+        //Turns on calculator
         onBtn.addEventListener('click', powerOn);
+        //Turns off calculator
         offBtn.addEventListener('click', powerOff);
 
-        if (powerStatus === 1) {
-            decimal.addEventListener('click', printEqn(decimal.innerHTML));
-            nine.addEventListener('click', printEqn(nine.innerHTML));
-            eigth.addEventListener('click', printEqn(eight.innerHTML));
-            seven.addEventListener('click', printEqn(seven.innerHTML));
-            six.addEventListener('click', printEqn(six.innerHTML));
-            five.addEventListener('click', printEqn(five.innerHTML));
-            four.addEventListener('click', printEqn(four.innerHTML));
-            three.addEventListener('click', printEqn(three.innerHTML));
-            two.addEventListener('click', printEqn(two.innerHTML));
-            one.addEventListener('click', printEqn(one.innerHTML));
-            zero.addEventListener('click', printEqn(zero.innerHTML));
+        decimal.addEventListener('click', () => {
+            print('clicked .');
+        });
+        nine.addEventListener('click', printEqn(nine));
+        eight.addEventListener('click', printEqn(eight));
+        seven.addEventListener('click', printEqn(seven));
+        six.addEventListener('click', printEqn(six));
+        five.addEventListener('click', printEqn(five));
+        four.addEventListener('click', printEqn(four));
+        three.addEventListener('click', printEqn(three));
+        two.addEventListener('click', printEqn(two));
+        one.addEventListener('click', printEqn(one));
+        zero.addEventListener('click', printEqn(zero));
 
+        
+
+        while (powerStatus === 1) {
+            
         }
     }
 
